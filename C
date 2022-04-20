@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int work_of_day;
+float paymant_work;
+float eight_percent;
+float result;
+
+int main()
+{
+    printf("Informe o número de dias trabalhados: ");
+    scanf("%i", &work_of_day);
+    
+    paymant_work = 20*work_of_day;
+    eight_percent = (paymant_work/100)*8;
+    result = paymant_work - eight_percent;
+    
+    printf("O valor dos dias trabalhados com impostos aplicados: ");
+    printf("R$%.2f", result);
+    return 0;
+}
